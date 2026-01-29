@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "SOS Méca",
+    "slug": "sos-meca",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "sosmeca",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#FF6B00"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.sosmeca.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "SOS Méca a besoin de votre position pour trouver des mécaniciens près de vous."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FF6B00"
+      },
+      "package": "com.sosmeca.app",
+      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION"]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "SOS Méca a besoin de votre position pour trouver des mécaniciens près de vous."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
